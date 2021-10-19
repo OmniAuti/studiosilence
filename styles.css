@@ -8,11 +8,13 @@
     --font-through: #e6d9c8;
 }
 
+body, html {
+    height: 0;
+}
+
 body {
     position: relative;
-  
-    min-height: 100vh;
-    overflow-x: hidden;
+    background-color: var(--font-through);
 }
 
 .hero {
@@ -134,9 +136,6 @@ h1 span {
     top: 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    border: 1px solid #000;
-    background-color: var(--font-through)
-    
 }
 
 ::-webkit-scrollbar {
