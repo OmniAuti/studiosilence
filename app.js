@@ -3,18 +3,23 @@ const shapeTwo = document.querySelector('.starting-shape-two')
 const shapeThree = document.querySelector('.starting-shape-three')
 
 
-const topAbout = document.querySelector('.about-section')
+const aboutSection = document.querySelector('.two-wrap')
+console.log('fag')
 
-window.addEventListener('scroll', () => {
-    console.log(topAbout.getBoundingClientRect().top)
-   if (topAbout.getBoundingClientRect().top < 325)  {
+const wrapper = document.querySelector('.out-wrap')
+
+wrapper.addEventListener('scroll', () => {
+    console.log(aboutSection.getBoundingClientRect())
+    console.log(aboutSection.getBoundingClientRect())
+
+   if (aboutSection.getBoundingClientRect().left < 325)  {
 
         shapeOne.classList.add('moveOneAbout') 
         shapeTwo.classList.add('moveTwoAbout') 
         shapeThree.classList.add('moveThreeAbout') 
 
    } 
-   else if (topAbout.getBoundingClientRect().top > 325) {
+   else if (aboutSection.getBoundingClientRect().left > 325) {
        shapeOne.classList.remove('moveOneAbout')
        shapeTwo.classList.remove('moveTwoAbout')
        shapeThree.classList.remove('moveThreeAbout')
