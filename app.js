@@ -3,12 +3,15 @@ const shapeTwo = document.querySelector('.starting-shape-two')
 const shapeThree = document.querySelector('.starting-shape-three')
 
 
-const aboutSection = document.querySelector('.two-wrap')
-console.log('fag')
+const aboutSection = document.querySelector('.about-section')
 
-const wrapper = document.querySelector('.out-wrap')
+
+const wrapper = document.querySelector('main')
 
 wrapper.addEventListener('scroll', () => {
+
+
+
     console.log(aboutSection.getBoundingClientRect())
     console.log(aboutSection.getBoundingClientRect())
 
@@ -26,3 +29,10 @@ wrapper.addEventListener('scroll', () => {
    }
      
 })
+
+const scrollContainer = document.querySelector('main');
+
+scrollContainer.addEventListener('wheel', (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+});
