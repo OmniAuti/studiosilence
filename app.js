@@ -15,25 +15,13 @@ const wrapper = document.querySelector('main')
 wrapper.addEventListener('scroll', () => {
 
 
-    const paraShape = hero.getBoundingClientRect().x * 1;
+    const paraShape = hero.getBoundingClientRect().x * 2.5;
     console.log(paraShape * -10)
     shapeOne.style.transform = `translateX(${paraShape * -1}px)`
     shapeOnea.style.transform = `translateX(${paraShape * -1}px)`
     shapeOneb.style.transform = `translateX(${paraShape * -1}px)`
     shapeOnec.style.transform = `translateX(${paraShape * -1}px)`
     shapeOned.style.transform = `translateX(${paraShape * -1}px)`
-
-   if (aboutSection.getBoundingClientRect().left < 325)  {
-
-
-        shapeTwo.classList.add('moveTwoAbout') 
-        shapeThree.classList.add('moveThreeAbout') 
-
-   } 
-   else if (aboutSection.getBoundingClientRect().left > 325) {
-       shapeTwo.classList.remove('moveTwoAbout')
-       shapeThree.classList.remove('moveThreeAbout')
-   }
      
 })
 

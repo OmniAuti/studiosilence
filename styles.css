@@ -24,6 +24,21 @@ body {
     width:150px;
 }
 
+main {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+  }
+  
+  
+  section {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  
+
+/* ------------------- HERO ---------------------- */
+
 .hero {
     position: relative;
     height: 100%;
@@ -31,16 +46,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .studio-title {
     float: left;
-    margin-left: 100px;
+    margin-left: 5%;
 }
 
 .silence-title {
     float:right;
-    margin-right: 100px;
+    margin-right: 5%;
 }
 
 
@@ -54,7 +70,7 @@ body {
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 25px );
     z-index: 99;
 }
 .starting-shape-one-2 {
@@ -67,7 +83,7 @@ body {
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 25px );
     z-index: 99;
 }
 .starting-shape-one-3 {
@@ -80,7 +96,7 @@ body {
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 25px );
     z-index: 99;
 }
 .starting-shape-one-4 {
@@ -93,7 +109,7 @@ body {
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 25px );
     z-index: 99;
 }
 
@@ -107,7 +123,7 @@ body {
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 25px );
     z-index: 99;
 }
 
@@ -119,81 +135,404 @@ body {
     transform: rotate(45deg);
 }
 
-.starting-shape-two {
+.circle-hero {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     background-color: rgba(44, 55, 156, 0.5);
     position: absolute;
-    top: 40vh;
-    right: 15%;
+    bottom: 0%;
+    right: 0%;
     overflow: hidden;
     transition: all ease-in-out 1000ms;
     background-image: var(--background-glass);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur( 10px );
+    animation-name: circle-hero;
+    animation-duration: 30000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.moveTwoAbout {
-    top: 40vh;
-    right: 20%;
+@keyframes circle-hero {
+    0% {
+        bottom: -100%;
+        right: 10%;
+        width: 300px;
+        height: 300px;
+    }
+
+    50% {
+        bottom: 100%;
+        right: 100%;
+        width: 400px;
+        height: 400px;
+    }
+
+    100%{
+        bottom: 100%;
+        right: 100%;
+        width: 300px;
+        height: 300px;
+    }
 }
 
-.starting-shape-three {
-    width: 300px;
+
+.rectangle-hero {
+    width: 500px;
     height: 150px;
     background-color: rgba(236, 208, 47, 0.5);
     position: absolute;
     transition: all ease-in-out 1000ms;
-    top: 25vh;
-    right: 5%;
+    top: 40%;
+    left: -100%;
     background-image: var(--background-glass);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur( 10px );
+    animation-name: rectangle-hero;
+    animation-duration: 30000ms;
+    animation-timing-function: linear;
+    animation-delay: 7500ms;
+    animation-iteration-count: infinite;
 }
 
-.moveThreeAbout {
-    top: -50vh;
-    right: -5%;
+@keyframes rectangle-hero {
+    0% {
+        left: -100%;
+        width: 500px;
+        height: 150px;
+    }
+
+    50% {
+        left: 100%;
+        width: 750px;
+        height: 150px;
+    }
+
+    100%{
+        left: 100%;
+        width: 500px;
+        height: 150px;
+    }
+}
+
+.rectangle-two-hero {
+    width: 200px;
+    height: 500px;
+    background-color: rgba(82, 206, 24, 0.5);
+    position: absolute;
+    transition: all ease-in-out 1000ms;
+    bottom: -100%;
+    left: 40%;
+    background-image: var(--background-glass);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur( 10px );
+    animation-name: rectangle-two-hero;
+    animation-duration: 30000ms;
+    animation-delay: 15000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rectangle-two-hero {
+    0% {
+        bottom: -100%;
+    }
+
+    50% {
+        bottom: 100%
+    }
+
+    100%{
+        bottom: 100%;
+    }
+}
+
+
+.diamond-hero {
+    background-image: var(--background-glass);
+    width: 400px;
+    height: 450px;
+    transform: rotate(45deg);
+    background-color: rgba(202, 13, 0, 0.5);
+    position: absolute;
+    right: -20%;
+    top: -100%;
+    overflow: hidden;
+    transition: all ease-in-out 0ms;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur( 10px );
+    animation-name: diamond-hero;
+    animation-duration: 30000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes diamond-hero {
+    0% {
+        transform: rotate(45deg);
+        right: 0%;
+    }
+
+    50% {
+        transform: rotate(-45deg);
+        right: 0%;
+        top: 120%;
+    }
+
+    100%{
+        transform: rotate(-45deg);
+        right: 0%;
+        top: 120%; 
+    }
+}
+
+.triangle-hero {
+    background-image: var(--background-glass);
+    width: 400px;
+    height: 400px;
+    transform: rotate(25deg);
+    background-color: rgba(248, 0, 248, 0.5);
+    position: absolute;
+    left: 20%;
+    bottom: 120%;
+    overflow: hidden;
+    transition: all ease-in-out 0ms;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur( 10px );
+    animation-name: triangle-hero;
+    animation-duration: 30000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 15000ms;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+@keyframes triangle-hero {
+    0% {
+        width: 400px;
+        height: 400px;
+        transform: rotate(25deg);
+        left: 20%;
+        bottom: 120%;
+    }
+    25%{
+        width: 400px;
+        height: 200px;
+        transform: rotate(180deg);
+        left: 10%;
+        bottom: 0%;
+    }
+    50% {
+        width: 400px;
+        height: 400px;
+        transform: rotate(300deg);
+        left: 0%;
+        bottom: -100%;
+    }
+    100% {
+        width: 400px;
+        height: 400px;
+        transform: rotate(360deg);
+        left: 0%;
+        bottom: -100%;
+    }
+}
+.bolt-hero {
+    background-image: var(--background-glass);
     width: 500px;
     height: 500px;
-    transform: rotate(45deg)
+    transform: rotate(5deg);
+    background-color: rgba(81, 188, 250, 0.5);
+    position: absolute;
+    right: -100%;
+    top: -20%;
+    overflow: hidden;
+    transition: all ease-in-out 0ms;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur( 10px );
+    animation-name: bolt-hero;
+    animation-duration: 30000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 20000ms;
+    clip-path: polygon(61% 0, 100% 0, 80% 45%, 100% 45%, 40% 100%, 61% 46%, 41% 46%);
 }
 
-.about-section {
+@keyframes bolt-hero {
+    0% {
+        right: -100%;
+        top: -50%;
+        transform: rotate(5deg);
+
+    }
+    50% {
+        right: 120%;
+        top: 20%;
+        transform: rotate(-75deg);
+
+    }
+    100% {
+        right: 150%;
+        top: 20%;
+        transform: rotate(-75deg);
+
+    }
+}
+.extra-hero {
+    background-image: var(--background-glass);
+    width: 300px;
+    height: 300px;
+    transform: rotate(0deg);
+    background-color: rgba(59, 30, 57, 0.5);
+    position: absolute;
+    left: -100%;
+    top: -20%;
+    overflow: hidden;
+    transition: all ease-in-out 0ms;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur( 10px );
+    animation-name: extra-hero;
+    animation-duration: 30000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 20000ms;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+
+@keyframes extra-hero {
+    0% {
+        left: -100%;
+        top: -20%;
+        transform: rotate(0deg);
+
+    }
+    50% {
+        left: 120%;
+        top: 75%;
+        transform: rotate(360deg);
+
+    }
+    100% {
+        left: 150%;
+        top: 75%;
+        transform: rotate(360deg);
+
+    }
+}
+
+
+/* -------------------------------- gallery ---------------------------------------- */
+
+  .gallery {
+     display: flex;
+     justify-content: space-between;
+     align-items:center;
+     position: relative;
+  }
+
+  .gallery-breaker {
+    position: sticky;
     height: 100%;
-    width: 100%;
+    width: 150px;
+    border: 1px solid #000;
+    background-color: var(--font-through);
+    left: 0;
+  }
+
+  .gallery-breaker h1 {
+      position: absolute;
+      font-size: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      writing-mode: vertical-lr;
+      text-orientation:upright;
+
+  }
+
+  .gallery-one {
+    width: 300px;
+    height:500px;
+    background-image: url('img/sunrise.jpg');
+    background-position: -350px center;
+
+  }
+  .gallery-two {
+    background-image: url('img/bowie.jpg');
+    background-position: -100px top;
+    width: 300px;
+    height: 500px;
+  }
+  .gallery-three {
+    background-image: url('img/chitown.jpg');
+    background-position:-160px center;
+    width: 300px;
+    height: 500px;
+  }
+
+/* ------ Commission ------------------- */
+  .store-breaker {
+    position: sticky;
+    height: 100%;
+    width: 150px;
+    border: 1px solid #000;
+    left: 0; 
 }
 
-.about-section h1 {
+.store-breaker h1 {
+position: absolute;
+font-size: 50px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+writing-mode: vertical-lr;
+text-orientation:upright;
+}
+
+
+/* ------ Commission ------------------- */
+
+  .commission-breaker {
+        position: sticky;
+        height: 100%;
+        width: 150px;
+        border: 1px solid #000;
+        left: 0; 
+  }
+
+  .commission-breaker h1 {
+    position: absolute;
     font-size: 50px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-lr;
+    text-orientation:upright;
+  }
 
-.about-section p:first-of-type {
-    width: 50%;
-    margin-left: 45%;
-    text-align: right;
-}
+/* ------  Contact ------------------- */
 
-.about-section p:last-of-type {
-    width: 50%;
-    margin-right: 40%;
-    text-align: left;
-    margin-left: 5%;
-}
-
-/* -------------------------------- STORE ---------------------------------------- */
-
-main {
-    overflow-x: hidden;
-    overflow-y: hidden;
+.commissions {
     display: flex;
-  }
-  
-  
-  section {
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-  
-  
+    position: relative;
+}
+
+.contact-breaker {
+    position:absolute;
+    height: 100%;
+    width: 150px;
+    border: 1px solid #000;
+    right: 0;
+}
+
+.contact-breaker h1 {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-lr;
+    text-orientation:upright;
+}
