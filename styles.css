@@ -28,15 +28,13 @@ main {
     overflow-x: hidden;
     overflow-y: hidden;
     display: flex;
-  }
+}
   
-  
-  section {
+section {
     min-width: 100vw;
     min-height: 100vh;
-  }
+}
   
-
 /* ------------------- HERO ---------------------- */
 
 .hero {
@@ -52,11 +50,13 @@ main {
 .studio-title {
     float: left;
     margin-left: 5%;
+    width: 60vw;
 }
 
 .silence-title {
     float:right;
     margin-right: 5%;
+    width: 70.11vw;
 }
 
 
