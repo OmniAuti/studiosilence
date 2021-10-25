@@ -60,7 +60,7 @@ main {
 }
 
 
-.starting-shape-one {
+.cover-shape-one {
     background-image: var(--background-glass);
     width: 300px;
     height: 100%;
@@ -71,9 +71,9 @@ main {
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur( 25px );
-    z-index: 99;
+    
 }
-.starting-shape-one-2 {
+.cover-shape-two {
     background-image: var(--background-glass);
     width: 300px;
     height: 100%;
@@ -84,9 +84,8 @@ main {
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur( 25px );
-    z-index: 99;
 }
-.starting-shape-one-3 {
+.cover-shape-three {
     background-image: var(--background-glass);
     width: 300px;
     height: 100%;
@@ -97,9 +96,9 @@ main {
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur( 25px );
-    z-index: 99;
+    
 }
-.starting-shape-one-4 {
+.cover-shape-four {
     background-image: var(--background-glass);
     width: 300px;
     height: 100%;
@@ -110,10 +109,9 @@ main {
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur( 25px );
-    z-index: 99;
 }
 
-.starting-shape-one-5 {
+.cover-shape-five {
     background-image: var(--background-glass);
     width: 300px;
     height: 100%;
@@ -124,15 +122,7 @@ main {
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 25px );
-    z-index: 99;
-}
-
-
-.moveOneAbout {
-    top: -50vh;
-    right: 80vw;
-    height: 1000px;
-    transform: rotate(45deg);
+    
 }
 
 .circle-hero {
@@ -147,7 +137,7 @@ main {
     transition: all ease-in-out 1000ms;
     background-image: var(--background-glass);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 25px );
     animation-name: circle-hero;
     animation-duration: 30000ms;
     animation-timing-function: linear;
@@ -157,13 +147,13 @@ main {
 @keyframes circle-hero {
     0% {
         bottom: -100%;
-        right: 10%;
+        right: 0%;
         width: 300px;
         height: 300px;
     }
 
     50% {
-        bottom: 100%;
+        bottom: 110%;
         right: 100%;
         width: 400px;
         height: 400px;
@@ -177,7 +167,6 @@ main {
     }
 }
 
-
 .rectangle-hero {
     width: 500px;
     height: 150px;
@@ -188,7 +177,7 @@ main {
     left: -100%;
     background-image: var(--background-glass);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 25px );
     animation-name: rectangle-hero;
     animation-duration: 30000ms;
     animation-timing-function: linear;
@@ -217,19 +206,19 @@ main {
 }
 
 .rectangle-two-hero {
-    width: 200px;
+    width: 250px;
     height: 500px;
     background-color: rgba(82, 206, 24, 0.5);
     position: absolute;
     transition: all ease-in-out 1000ms;
     bottom: -100%;
-    left: 40%;
+    left: 41%;
     background-image: var(--background-glass);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 25px );
     animation-name: rectangle-two-hero;
     animation-duration: 30000ms;
-    animation-delay: 15000ms;
+    animation-delay: 15500ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -248,7 +237,6 @@ main {
     }
 }
 
-
 .diamond-hero {
     background-image: var(--background-glass);
     width: 400px;
@@ -261,7 +249,7 @@ main {
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 25px );
     animation-name: diamond-hero;
     animation-duration: 30000ms;
     animation-timing-function: linear;
@@ -275,15 +263,15 @@ main {
     }
 
     50% {
-        transform: rotate(-45deg);
+        transform: rotate(-180deg);
         right: 0%;
-        top: 120%;
+        top: 150%;
     }
 
     100%{
         transform: rotate(-45deg);
         right: 0%;
-        top: 120%; 
+        top: 150%; 
     }
 }
 
@@ -294,91 +282,81 @@ main {
     transform: rotate(25deg);
     background-color: rgba(248, 0, 248, 0.5);
     position: absolute;
-    left: 20%;
+    left: 12.5%;
     bottom: 120%;
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 25px );
     animation-name: triangle-hero;
     animation-duration: 30000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 15000ms;
+    animation-delay: 17500ms;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 @keyframes triangle-hero {
     0% {
-        width: 400px;
-        height: 400px;
         transform: rotate(25deg);
-        left: 20%;
+        left: 10%;
         bottom: 120%;
     }
-    25%{
-        width: 400px;
-        height: 200px;
-        transform: rotate(180deg);
-        left: 10%;
-        bottom: 0%;
-    }
+
     50% {
-        width: 400px;
-        height: 400px;
         transform: rotate(300deg);
         left: 0%;
-        bottom: -100%;
+        bottom: -200%;
     }
     100% {
-        width: 400px;
-        height: 400px;
         transform: rotate(360deg);
         left: 0%;
         bottom: -100%;
     }
 }
+
 .bolt-hero {
     background-image: var(--background-glass);
-    width: 500px;
-    height: 500px;
-    transform: rotate(5deg);
+    width: 450px;
+    height: 450px;
+    transform: rotate(-85deg);
     background-color: rgba(81, 188, 250, 0.5);
     position: absolute;
     right: -100%;
-    top: -20%;
+    top: -30%;
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 25px );
     animation-name: bolt-hero;
     animation-duration: 30000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 20000ms;
+    animation-delay: 23000ms;
     clip-path: polygon(61% 0, 100% 0, 80% 45%, 100% 45%, 40% 100%, 61% 46%, 41% 46%);
 }
 
 @keyframes bolt-hero {
     0% {
         right: -100%;
-        top: -50%;
-        transform: rotate(5deg);
+        top: -30%;
+        transform: rotate(-85deg);
 
     }
     50% {
         right: 120%;
-        top: 20%;
-        transform: rotate(-75deg);
+        top: 40%;
+        transform: rotate(-115deg);
 
     }
     100% {
         right: 150%;
         top: 20%;
-        transform: rotate(-75deg);
+        transform: rotate(-115deg);
 
     }
 }
+
 .extra-hero {
     background-image: var(--background-glass);
     width: 300px;
@@ -391,7 +369,7 @@ main {
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 25px );
     animation-name: extra-hero;
     animation-duration: 30000ms;
     animation-timing-function: linear;
@@ -399,7 +377,6 @@ main {
     animation-delay: 20000ms;
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
-
 
 @keyframes extra-hero {
     0% {
@@ -410,13 +387,13 @@ main {
     }
     50% {
         left: 120%;
-        top: 75%;
+        top: 85%;
         transform: rotate(360deg);
 
     }
     100% {
         left: 150%;
-        top: 75%;
+        top: 85%;
         transform: rotate(360deg);
 
     }
@@ -430,6 +407,7 @@ main {
      justify-content: space-between;
      align-items:center;
      position: relative;
+     background-color: var(--font-through)
   }
 
   .gallery-breaker {
