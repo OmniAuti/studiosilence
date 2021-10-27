@@ -474,6 +474,37 @@ section {
 
 .store {
     z-index: 6;
+    position: relative;
+}
+
+.etsy-container {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 150px;
+    
+}
+
+.commission-container {
+    position: absolute;
+    width: calc(50% - 150px);
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.etsy-container img,
+    .commission-container img {
+    margin-top: 15px;
+    height: 30px;
 }
 
 /* ---------------------  Contact ------------------- */
