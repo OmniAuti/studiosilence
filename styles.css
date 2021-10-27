@@ -446,6 +446,20 @@ section {
     justify-content: space-around;
 }
 
+.contain-top {
+    width: 24.75%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.contain-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform ease-in 250ms;
+}
 
 .contain {
     width: 33%;
@@ -463,7 +477,8 @@ section {
     transition: transform ease-in 250ms;
 }
 
-.contain img:hover {
+.contain img:hover,
+    .contain-top img:hover {
     transform: scale(1.02);
 }
 
@@ -502,15 +517,78 @@ section {
     height: 30px;
 }
 
+.commission-container form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10% 0;
+}
+
+input {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+}
+
+input[type=file] {
+    width: 60%;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 20px;
+    width: 50%;
+    padding: 5px;
+}
+
+.file-upload-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#textbox-description {
+    width: 80%;
+    font-size: 25px;
+    padding: 5px;
+}
+
 /* ---------------------  Contact ------------------- */
 
 .contact {
-    min-width: calc(50%);
-    z-index: 6;
+    min-width: 250px;
+    position: relative;
 }
-
 
 .contact-breaker {
     position: sticky;
     right: 100px;
+}
+
+.contact-container {
+    position: absolute;
+    right: 0;
+    top:0;
+    width: calc(100% - 150px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-container svg {
+    width: 75px;
+    margin: 20px;
+    cursor:pointer;
+}
+
+.contact-container svg:hover {
+    transform: scale(1.05)
 }
