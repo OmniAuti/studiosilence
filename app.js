@@ -14,7 +14,7 @@ wrapper.addEventListener('scroll', () => {
 
 
     const paraShape = hero.getBoundingClientRect().x * 1.1;
-    console.log(paraShape * -10)
+
     coverOne.style.transform = `translateX(${paraShape * -1}px)`
     coverTwo.style.transform = `translateX(${paraShape * -1}px)`
     coverThree.style.transform = `translateX(${paraShape * -1}px)`
@@ -23,10 +23,16 @@ wrapper.addEventListener('scroll', () => {
      
 })
 
-const scrollContainer = document.querySelector('main');
 
-scrollContainer.addEventListener('wheel', (evt) => {
+if (window.innerWidth > 800) {
+    
+    const scrollContainer = document.querySelector('main');
+
+    scrollContainer.addEventListener('wheel', (evt) => {
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
 });
+
+}
+
 
