@@ -410,7 +410,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 6;
 }
 
 .breaker img {
@@ -426,7 +426,7 @@ section {
     position: relative;
 }
  
-.gallery-holder {
+.gallery-container {
     position: absolute;
     right: 0;
     top: 0;
@@ -439,7 +439,7 @@ section {
 }
 
 .gallery-row {
-    height: 49%;
+    height: 49.5%;
     width: 97.5%;
     overflow: hidden;
     display: flex;
@@ -473,7 +473,6 @@ section {
 /* ------ Store ------------------- */
 
 .store {
-    z-index: 6;
     position: relative;
 }
 
