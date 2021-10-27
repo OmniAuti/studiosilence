@@ -396,14 +396,8 @@ section {
     }
 }
 
+/* -------------------------------- BREAKERS ---------------------------------------- */
 
-/* -------------------------------- gallery ---------------------------------------- */
-
-.gallery {
-    background-color: var(--font-through);
-    z-index: 6;
-}
- 
 .breaker {
     position: sticky;
     height: 100%;
@@ -419,10 +413,49 @@ section {
     z-index: 1;
 }
 
-  
 .breaker img {
     height: 50px;
     width:unset;
+}
+
+/* -------------------------------- gallery ---------------------------------------- */
+
+.gallery {
+    background-color: var(--font-through);
+    z-index: 6;
+    position: relative;
+}
+ 
+.gallery-holder {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(100% - 150px);
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery-row {
+    height: 45%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gallery-row img {
+    width: 32%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gallery-row img:hover {
+   
 }
 
 
