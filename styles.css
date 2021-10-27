@@ -5,7 +5,7 @@
 }
 
 :root {
-    --font-through: #e7dfd3;
+    --font-through: #e7e2da;
     --background-glass: url("https://www.transparenttextures.com/patterns/otis-redding.png");
 
     /*url("https://www.transparenttextures.com/patterns/otis-redding.png");*/
@@ -51,7 +51,6 @@ section {
     margin-right: 5%;
     width: 70.11vw;
 }
-
 
 .cover-shape-one {
     background-image: var(--background-glass);
@@ -468,9 +467,7 @@ section {
     transform: scale(1.02);
 }
 
-
-
-/* ------ Store ------------------- */
+/* --------------------------------- Store -------------------------------------------- */
 
 .store {
     position: relative;
@@ -482,7 +479,6 @@ section {
     height: 100%;
     top: 0;
     left: 150px;
-    
 }
 
 .commission-container {
@@ -491,6 +487,7 @@ section {
     height: 100%;
     top: 0;
     right: 0;
+    background-color: red;
 }
 
 .title-container {
@@ -509,13 +506,12 @@ section {
 /* ---------------------  Contact ------------------- */
 
 .contact {
-    min-width: 35vw;
+    min-width: calc(50%);
     z-index: 6;
 }
 
 
 .contact-breaker {
-
     position: sticky;
     right: 100px;
 }
