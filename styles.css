@@ -538,7 +538,11 @@ section {
     width: 35%;
     border-radius: 5px;
     overflow: hidden;
+}
 
+.etsy-item a {
+    text-decoration: none;
+    color: #000;
 }
 
 .etsy-item:hover {
