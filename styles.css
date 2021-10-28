@@ -541,7 +541,7 @@ input[type=file] {
 
 label {
     font-size: 20px;
-    width: 50%;
+    width: 100%;
     padding: 5px;
 }
 
@@ -553,10 +553,31 @@ label {
     flex-direction: column;
 }
 
+.file-upload-container div {
+    width: 272px;
+    margin-right: 0;
+    justify-content: space-between;
+}
+
+.file-upload-container svg {
+    margin-left: 5px;
+}
+
 #textbox-description {
     width: 80%;
     font-size: 25px;
     padding: 5px;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form svg {
+    height: 30px;
+    margin-right: 20px;
 }
 
 /* ---------------------  Contact ------------------- */
