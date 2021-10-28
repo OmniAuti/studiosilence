@@ -36,3 +36,29 @@ if (window.innerWidth > 800) {
 }
 
 
+const contactDiv = document.querySelector('.contact-container')
+const contactGlassCont = document.querySelector('.contact-glass-cont')
+
+setInterval(rainbowContact, 8500)
+
+let i = 0
+function rainbowContact() {
+
+    const glass = document.createElement('div')
+    glass.classList.add('contact-glass-cont', `remove-${i}`)
+    glass.innerHTML = `<div class="contact-glass-one"></div>
+    <div class="contact-glass-two"></div>
+    <div class="contact-glass-three"></div>
+    <div class="contact-glass-four"></div>
+    <div class="contact-glass-five"></div>`
+    contactDiv.append(glass)
+
+    const child = document.querySelector(`.remove-${i}`)
+
+    setTimeout(() => {
+        contactDiv.removeChild(child)
+    }, 10500)
+
+    i++
+  }
+

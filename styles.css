@@ -207,7 +207,7 @@ section {
     background-color: rgba(82, 206, 24, 0.5);
     position: absolute;
     transition: all ease-in-out 1000ms;
-    bottom: -100%;
+    bottom: -150%;
     left: 41%;
     background-image: var(--background-glass);
     backdrop-filter: blur(5px);
@@ -572,6 +572,7 @@ section {
     height: 100%;
     top: 0;
     right: 0;
+    border-left: 1px solid #000;
 }
 
 .commission-container form {
@@ -643,7 +644,7 @@ form svg {
 .contact {
     min-width: 250px;
     position: relative;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .contact-breaker {
@@ -675,6 +676,27 @@ form svg {
 
 .contact-container svg:hover {
     transform: scale(1.05)
+}
+
+.contact-glass-cont {
+    animation-name: glass-contact;
+    animation-duration: 10000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    height: 100%;
+    position: absolute;
+    right: 140%;
+    top: 0;
+    width: 100%;    
+}
+
+@keyframes glass-contact {
+    0% {
+        right: 140%;
+    }
+    100% {
+        right: -865%;
+    }
 }
 
 .contact-glass-one {
