@@ -488,12 +488,37 @@ section {
     position: relative;
 }
 
+.title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title-container img {
+    margin-top: 15px;
+    height: 30px;
+}
+
 .etsy-container {
     position: absolute;
     width: 50%;
     height: 100%;
     top: 0;
     left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.etsy-store-rev-cont {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+.etsy-store-rev {
+    height: 100px !important;
+    margin-top: 0 !important;
+    width: 35%;
 }
 
 .commission-container {
@@ -504,18 +529,6 @@ section {
     right: 0;
 }
 
-.title-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.etsy-container img,
-    .commission-container img {
-    margin-top: 15px;
-    height: 30px;
-}
 
 .commission-container form {
     height: 100%;
@@ -561,6 +574,7 @@ label {
 
 .file-upload-container svg {
     margin-left: 5px;
+    
 }
 
 #textbox-description {
