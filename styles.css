@@ -524,19 +524,19 @@ section {
 .etsy-items-cont {
     width: 100%;
     height: 100%;
-    padding: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    overflow: scroll;
+    align-content: flex-start;
     cursor: pointer;
     padding-top: 0;
 }
 
 .etsy-item {
-    height: 45%;
+    height: 35%;
     width: 35%;
     border-radius: 5px;
+    margin-top: 10px;
     overflow: hidden;
 }
 
@@ -550,16 +550,18 @@ section {
 }
 
 .etsy-item-pic {
-    height: 80%;
+    height: 78%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 .etsy-item-name {
+    font-size: 1.25vw;
     padding-left: 10px;
 }
 
 .etsy-price {
+    font-size: 1.25vw;
     padding-left: 10px;
     font-weight: bold;
 }
@@ -571,7 +573,6 @@ section {
     top: 0;
     right: 0;
 }
-
 
 .commission-container form {
     height: 100%;
@@ -642,6 +643,7 @@ form svg {
 .contact {
     min-width: 250px;
     position: relative;
+    overflow: hidden;
 }
 
 .contact-breaker {
@@ -651,22 +653,82 @@ form svg {
 
 .contact-container {
     position: absolute;
-    right: 0;
+    left: 150px;
     top:0;
-    width: calc(100% - 170px);
+    width: calc(100% - 150px);
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.contact-container svg {
-    width: 75px;
-    margin: 20px;
-    cursor:pointer;
+.contact-container a {
+    height: 100%;
+    width: 75%;
+    cursor: pointer;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-container svg:hover {
     transform: scale(1.05)
+}
+
+.contact-glass-one {
+    background-image: var(--background-glass);
+    width: 200%;
+    height: 500%;
+    background-color: rgba(202, 13, 0, 0.5);
+    position: absolute;
+    right: -25%;
+    top:0;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur( 25px );
+}
+.contact-glass-two {
+    background-image: var(--background-glass);
+    width: 200%;
+    height: 500%;
+    background-color: rgba(140, 177, 116, 0.5);
+    position: absolute;
+    right: 150%;
+    top:0;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur( 25px );
+}
+.contact-glass-three {
+    background-image: var(--background-glass);
+    width: 200%;
+    height: 100%;
+    background-color: rgba(94, 68, 206, 0.5);
+    position: absolute;
+    right: 315%;
+    top:0;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur( 25px );
+}
+.contact-glass-four {
+    background-image: var(--background-glass);
+    width: 200%;
+    height: 100%;
+    background-color: rgba(215, 88, 226, 0.5);
+    position: absolute;
+    right:490%;
+    top:0;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur( 25px );
+}
+.contact-glass-five {
+    background-image: var(--background-glass);
+    width: 200%;
+    height: 100%;
+    background-color: rgba(229, 231, 114, 0.5);
+    position: absolute;
+    right: 665%;
+    top:0;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur( 25px );
 }
