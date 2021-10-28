@@ -62,3 +62,23 @@ function rainbowContact() {
     i++
   }
 
+const galClick = document.querySelectorAll('.gal-click')
+const galModal = document.querySelector('.gallery-modal')
+const galModalCont = document.querySelector('.gallery-modal-cont')
+const closeBtn = document.querySelector('.close-btn')
+
+galClick.forEach(gal => {
+    gal.addEventListener('click', () => {
+        let attrPic = gal.firstElementChild.getAttribute('src')
+        console.log(attrPic)
+        
+        if (!galModalCont.classList.contains('active-modal')) {
+            galModal.firstElementChild.setAttribute('src', attrPic)
+            galModalCont.classList.add('active-modal')
+        }
+    })
+})
+
+closeBtn.addEventListener('click', () => {
+    galModalCont.classList.remove('active-modal')
+})
