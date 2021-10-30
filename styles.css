@@ -474,7 +474,7 @@ section {
     .breaker {
         top: 0;
         width: 100%;
-        height: 100px;
+        height: 75px;
         flex-direction: row;
         border-bottom: 1px solid #000;
         border-top: 1px solid #000;
@@ -602,6 +602,21 @@ section {
 .contain img:hover,
     .contain-top img:hover {
     transform: scale(1.02);
+}
+
+@media (max-width: 800px) {
+
+.gallery-container {
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 75px;
+}
+
+.gallery-modal-cont {
+    width: 100%;
+    
+}
 }
 
 /* --------------------------------- Store -------------------------------------------- */
