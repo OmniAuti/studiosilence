@@ -606,17 +606,22 @@ section {
 
 @media (max-width: 800px) {
 
-.gallery-container {
-    right: 0;
-    top: 0;
-    width: 100%;
-    padding-top: 75px;
-}
+    .gallery-container {
+        right: 0;
+        top: 0;
+        width: 100%;
+        padding-top: 75px;
+    }
 
-.gallery-modal-cont {
-    width: 100%;
-    
-}
+    .gallery-modal-cont {
+        width: 100%;
+    }
+
+    .gallery-row {
+        height: 49%;
+        width: 99%;
+    }
+
 }
 
 /* --------------------------------- Store -------------------------------------------- */
