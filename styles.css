@@ -23,6 +23,18 @@ main {
     display: flex;
 }
 
+@media (max-width: 800px) {
+
+    body {
+        overflow-y: scroll;
+    }
+
+    main {
+        overflow-y: scroll;
+        flex-direction: column;
+    }
+}
+
 section {
     min-width: 100vw;
     height: 100vh;
@@ -395,6 +407,46 @@ section {
     }
 }
 
+
+@media (max-width: 800px) {
+
+    .circle-hero {
+        width: 300px;
+        height: 300px;
+    }
+
+    .rectangle-hero {
+        width: 500px;
+        height: 150px;
+    }
+
+    .rectangle-two-hero {
+        width: 250px;
+        height: 500px;
+    }
+
+    .diamond-hero {
+        width: 400px;
+        height: 450px;
+    }
+
+    .triangle-hero {
+        width: 400px;
+        height: 400px;
+    }
+
+    .bolt-hero {
+        width: 450px;
+        height: 450px;
+    }
+
+    .extra-hero {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
 /* -------------------------------- BREAKERS ---------------------------------------- */
 
 .breaker {
@@ -415,6 +467,12 @@ section {
 .breaker img {
     height: 50px;
     width:unset;
+}
+
+@media (max-width:800px) {
+    .breaker img {
+        height: 25px;
+    }
 }
 
 /* -------------------------------- gallery ---------------------------------------- */
@@ -707,12 +765,12 @@ form svg {
 
 .contact-breaker {
     position: sticky;
-    right: 100px;
+    left: 0;
 }
 
 .contact-container {
     position: absolute;
-    left: 150px;
+    right: 0;
     top:0;
     width: calc(100% - 150px);
     height: 100%;
@@ -724,7 +782,7 @@ form svg {
 
 .contact-container a {
     height: 100%;
-    width: 50%;
+    width: 100%;
     cursor: pointer;
     z-index: 5;
     display: flex;
@@ -732,8 +790,8 @@ form svg {
     align-items: center;
 }
 
-.contact-container svg:hover {
-    transform: scale(1.05)
+.contact-container a:hover {
+    transform: scale(1.1)
 }
 
 .contact-glass-cont {
