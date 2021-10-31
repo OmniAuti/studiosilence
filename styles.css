@@ -72,13 +72,13 @@ section {
 @media (max-width: 800px) {
     .studio-title {
         width: 80vw;
-        margin-left: 0px;
+        margin-left: 5px;
         margin-bottom: 20%;
     }
     .silence-title {
         width: 93.5vw;
-        margin-right: 0px;
-        margin-bottom: 50px;
+        margin-right: 5px;
+        margin-bottom: 15%;
     }
 }
 
@@ -452,26 +452,26 @@ section {
 }
 
     .rectangle-hero {
-        width: 250px;
+        width: 400px;
         height: 150px;
     }
 
     @keyframes rectangle-hero {
         0% {
             left: -150%;
-            width: 200px;
+            width: 400px;
             height: 150px;
         }
     
         50% {
             left: 150%;
-            width: 250px;
+            width: 400px;
             height: 150px;
         }
     
         100%{
             left: 150%;
-            width: 250px;
+            width: 400px;
             height: 150px;
         }
     }
