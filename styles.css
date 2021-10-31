@@ -68,6 +68,14 @@ section {
     width: 70.11vw;
 }
 
+@media (max-width: 800px) {
+    .studio-title,
+        .silence-title {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+}
+
 .cover-shape-one {
     background-image: var(--background-glass);
     width: 28vw;
