@@ -773,6 +773,12 @@ section {
         width: 100%;
     }
 
+    .gallery-modal {
+        min-width: 90%;
+        max-height:90%;
+
+    }
+
     .gallery-row {
         height: 49.5%;
         width: 99%;
