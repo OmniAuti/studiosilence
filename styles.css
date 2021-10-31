@@ -182,7 +182,7 @@ section {
     position: absolute;
     transition: all ease-in-out 1000ms;
     top: 40%;
-    left: -100%;
+    left: -150%;
     background-image: var(--background-glass);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 25px );
@@ -559,7 +559,8 @@ section {
     display: block;
 }
 
-.gallery-row {
+.gallery-row, 
+    .gallery-row-bottom {
     height: 49.5%;
     width: 97.5%;
     overflow: hidden;
@@ -606,6 +607,10 @@ section {
 
 @media (max-width: 800px) {
 
+    .gallery {
+        height: 400vh;
+    }
+
     .gallery-container {
         right: 0;
         top: 0;
@@ -618,8 +623,29 @@ section {
     }
 
     .gallery-row {
-        height: 49%;
+        height: 50%;
         width: 99%;
+        overflow:visible;
+        flex-wrap: wrap;
+    }
+
+    .gallery-row-bottom {
+        height: 50%;
+        width: 99%;
+        overflow:visible;
+        flex-wrap: wrap;
+    }
+
+    .contain-top {
+        margin-top: 2.5px;
+        width: 100%;
+        height: 25%;
+    }
+
+    .contain {
+        width: 100%;
+        height: 33%;
+        margin-top: 2.5px;
     }
 
 }
@@ -814,7 +840,7 @@ form svg {
 
 .contact-container a {
     height: 100%;
-    width: 100%;
+    width: 75%;
     cursor: pointer;
     z-index: 5;
     display: flex;
