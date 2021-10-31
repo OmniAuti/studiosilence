@@ -429,8 +429,8 @@ section {
 @media (max-width: 800px) {
 
     .circle-hero {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
 
@@ -452,7 +452,7 @@ section {
 }
 
     .rectangle-hero {
-        width: 100px;
+        width: 250px;
         height: 150px;
     }
 
@@ -478,7 +478,7 @@ section {
 
     .rectangle-two-hero {
         width: 150px;
-        height: 500px;
+        height: 400px;
     }
 
     @keyframes rectangle-two-hero {
@@ -496,8 +496,8 @@ section {
     }
 
     .diamond-hero {
-        width: 150px;
-        height: 200px;
+        width: 250px;
+        height: 300px;
     }
 
     @keyframes diamond-hero {
@@ -522,7 +522,7 @@ section {
     
 
     .triangle-hero {
-        width: 200px;
+        width: 250px;
         height: 225px;
     }
 
@@ -546,8 +546,8 @@ section {
     }
 
     .bolt-hero {
-        width: 245px;
-        height: 245px;
+        width: 250px;
+        height: 250px;
     }
 
     @keyframes bolt-hero {
