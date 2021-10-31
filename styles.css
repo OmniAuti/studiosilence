@@ -71,11 +71,11 @@ section {
 @media (max-width: 800px) {
     .studio-title {
         width: 80vw;
-        margin-left: 0;
+        margin-left: 10px;
     }
     .silence-title {
         width: 93.5vw;
-        margin-right: 0;
+        margin-right: 10px;
     }
 }
 
