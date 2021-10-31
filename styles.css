@@ -11,6 +11,10 @@
     /*url("https://www.transparenttextures.com/patterns/otis-redding.png");*/
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     position: relative;
     background-color: var(--font-through);
@@ -623,14 +627,14 @@ section {
     }
 
     .gallery-row {
-        height: 50%;
+        height: 49.5%;
         width: 99%;
         overflow:visible;
         flex-wrap: wrap;
     }
 
     .gallery-row-bottom {
-        height: 50%;
+        height: 49.5%;
         width: 99%;
         overflow:visible;
         flex-wrap: wrap;
