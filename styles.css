@@ -237,15 +237,15 @@ section {
 
 @keyframes rectangle-two-hero {
     0% {
-        bottom: -100%;
+        bottom: -150%;
     }
 
     50% {
-        bottom: 100%
+        bottom: 150%
     }
 
     100%{
-        bottom: 100%;
+        bottom: 150%;
     }
 }
 
@@ -257,7 +257,7 @@ section {
     background-color: rgba(202, 13, 0, 0.5);
     position: absolute;
     right: -20%;
-    top: -100%;
+    top: -150%;
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(5px);
@@ -334,7 +334,7 @@ section {
     transform: rotate(-85deg);
     background-color: rgba(81, 188, 250, 0.5);
     position: absolute;
-    right: -100%;
+    right: -125%;
     top: -30%;
     overflow: hidden;
     transition: all ease-in-out 0ms;
@@ -415,39 +415,175 @@ section {
 @media (max-width: 800px) {
 
     .circle-hero {
-        width: 300px;
-        height: 300px;
-    }
-
-    .rectangle-hero {
-        width: 500px;
+        width: 150px;
         height: 150px;
     }
 
+
+@keyframes circle-hero {
+    0% {
+        bottom: -100%;
+        right: 0%;
+    }
+
+    50% {
+        bottom: 110%;
+        right: 100%;
+    }
+
+    100%{
+        bottom: 100%;
+        right: 100%;
+    }
+}
+
+    .rectangle-hero {
+        width: 100px;
+        height: 100px;
+    }
+
+    @keyframes rectangle-hero {
+        0% {
+            left: -150%;
+            width: 200px;
+            height: 75px;
+        }
+    
+        50% {
+            left: 150%;
+            width: 250px;
+            height: 75px;
+        }
+    
+        100%{
+            left: 150%;
+            width: 250px;
+            height: 75px;
+        }
+    }
+
     .rectangle-two-hero {
-        width: 250px;
+        width: 100px;
         height: 500px;
     }
 
-    .diamond-hero {
-        width: 400px;
-        height: 450px;
+    @keyframes rectangle-two-hero {
+        0% {
+            bottom: -150%;
+        }
+    
+        50% {
+            bottom: 150%
+        }
+    
+        100%{
+            bottom: 150%;
+        }
     }
 
+    .diamond-hero {
+        width: 150px;
+        height: 200px;
+    }
+
+    @keyframes diamond-hero {
+        0% {
+            transform: rotate(45deg);
+            right: 0%;
+            top: -150%;
+        }
+    
+        50% {
+            transform: rotate(-180deg);
+            right: 0%;
+            top: 150%;
+        }
+    
+        100%{
+            transform: rotate(-45deg);
+            right: 0%;
+            top: 150%; 
+        }
+    }
+    
+
     .triangle-hero {
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 225px;
+    }
+
+    @keyframes triangle-hero {
+        0% {
+            transform: rotate(25deg);
+            left: 10%;
+            bottom: 150%;
+        }
+    
+        50% {
+            transform: rotate(300deg);
+            left: 0%;
+            bottom: -200%;
+        }
+        100% {
+            transform: rotate(360deg);
+            left: 0%;
+            bottom: -100%;
+        }
     }
 
     .bolt-hero {
-        width: 450px;
-        height: 450px;
+        width: 245px;
+        height: 245px;
+    }
+
+    @keyframes bolt-hero {
+        0% {
+            right: -100%;
+            top: -30%;
+            transform: rotate(-85deg);
+    
+        }
+        50% {
+            right: 120%;
+            top: 40%;
+            transform: rotate(-115deg);
+    
+        }
+        100% {
+            right: 150%;
+            top: 20%;
+            transform: rotate(-115deg);
+    
+        }
     }
 
     .extra-hero {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
+
+
+@keyframes extra-hero {
+    0% {
+        left: -100%;
+        top: -20%;
+        transform: rotate(0deg);
+
+    }
+    50% {
+        left: 120%;
+        top: 85%;
+        transform: rotate(360deg);
+
+    }
+    100% {
+        left: 150%;
+        top: 85%;
+        transform: rotate(360deg);
+
+    }
+}
+
 
 }
 
@@ -672,9 +808,6 @@ section {
     height: 30px;
 }
 
-
-
-
 .etsy-container {
     position: absolute;
     width: 50%;
@@ -826,6 +959,10 @@ form svg {
         height: 200vh;
     }
 
+    .title-container img {
+        margin-top: 0;
+    }
+
     .etsy-container {
         width: 100%;
         height: 50%;
@@ -837,6 +974,10 @@ form svg {
         height: 50%;
         bottom: 0;
         top: 50%;
+    }
+
+    .border-left-div {
+       display: none;
     }
 }
 
