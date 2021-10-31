@@ -674,6 +674,7 @@ section {
 
 
 
+
 .etsy-container {
     position: absolute;
     width: 50%;
@@ -818,6 +819,27 @@ form svg {
     height: 30px;
     margin-right: 20px;
 }
+
+@media (max-width: 800px) {
+    .store {
+        display: flex;
+        height: 200vh;
+    }
+
+    .etsy-container {
+        width: 100%;
+        height: 50%;
+        top: 75px;
+        left: 0;
+    }
+    .commission-container {
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        top: 50%;
+    }
+}
+
 
 /* ---------------------  Contact ------------------- */
 
