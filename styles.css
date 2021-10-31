@@ -69,10 +69,13 @@ section {
 }
 
 @media (max-width: 800px) {
-    .studio-title,
-        .silence-title {
-        margin-bottom: 10%;
-        margin-top: 7.5%;
+    .studio-title {
+        width: 80vw;
+        margin-left: 0;
+    }
+    .silence-title {
+        width: 93.5vw;
+        margin-right: 0;
     }
 }
 
