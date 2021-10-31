@@ -70,11 +70,19 @@ const closeBtn = document.querySelector('.close-btn')
 galClick.forEach(gal => {
     gal.addEventListener('click', () => {
         let attrPic = gal.firstElementChild.getAttribute('src')
-        console.log(attrPic)
         
         if (!galModalCont.classList.contains('active-modal')) {
             galModal.firstElementChild.setAttribute('src', attrPic)
             galModalCont.classList.add('active-modal')
+
+            const topOfModal = galModal.offsetTop * 1.25;
+     
+            console.log(topOfModal)
+            window.scrollTo({
+                top: topOfModal,
+      
+                behavior: 'smooth'
+            })
         }
     })
 })
