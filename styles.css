@@ -151,6 +151,9 @@ section {
     z-index: 5;
 }
 
+
+/* ------------------------------------------- HERO SHAPE EFFECT ---------------------------------------------------- */
+
 .circle-hero {
     width: 300px;
     height: 300px;
@@ -165,7 +168,7 @@ section {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
     animation-name: circle-hero;
-    animation-duration: 25000ms;
+    animation-duration: 60000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -178,11 +181,18 @@ section {
         height: 300px;
     }
 
-    50% {
+    25% {
         bottom: 150%;
         right: 110%;
         width: 400px;
         height: 400px;
+    }
+
+    50% {
+        bottom: 150%;
+        right: 110%;
+        width: 300px;
+        height: 300px;
     }
 
     100%{
@@ -207,7 +217,8 @@ section {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
     animation-name: diamond-hero;
-    animation-duration: 25000ms;
+    animation-duration: 60000ms;
+    animation-delay: 5000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -215,18 +226,24 @@ section {
 @keyframes diamond-hero {
     0% {
         transform: rotate(45deg);
-        right: 0%;
+        right: 10%;
+    }
+
+    25% {
+        transform: rotate(-180deg);
+        right: 10%;
+        top: 150%;
     }
 
     50% {
-        transform: rotate(-180deg);
-        right: 0%;
-        top: 150%;
+        transform: rotate(-45deg);
+        right: 10%;
+        top: 150%; 
     }
 
     100%{
         transform: rotate(-45deg);
-        right: 0%;
+        right: 10%;
         top: 150%; 
     }
 }
@@ -244,9 +261,9 @@ section {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
     animation-name: rectangle-hero;
-    animation-duration: 25000ms;
+    animation-duration: 60000ms;
     animation-timing-function: linear;
-    animation-delay: 5000ms;
+    animation-delay: 10000ms;
     animation-iteration-count: infinite;
 }
 
@@ -257,9 +274,15 @@ section {
         height: 150px;
     }
 
-    50% {
+    25% {
         left: 100%;
         width: 750px;
+        height: 150px;
+    }
+
+    50% {
+        left: 100%;
+        width: 500px;
         height: 150px;
     }
 
@@ -282,23 +305,27 @@ section {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
     animation-name: rectangle-two-hero;
-    animation-duration: 25000ms;
-    animation-delay: 10500ms;
+    animation-duration: 60000ms;
+    animation-delay: 20000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes rectangle-two-hero {
     0% {
-        bottom: -150%;
+        bottom: -125%;
+    }
+
+    25% {
+        bottom: 125%
     }
 
     50% {
-        bottom: 150%
+        bottom: 125%
     }
 
     100%{
-        bottom: 150%;
+        bottom: 125%;
     }
 }
 
@@ -317,10 +344,10 @@ section {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
     animation-name: triangle-hero;
-    animation-duration: 25000ms;
+    animation-duration: 60000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 12500ms;
+    animation-delay: 32500ms;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
@@ -331,11 +358,18 @@ section {
         bottom: 120%;
     }
 
+    25% {
+        transform: rotate(300deg);
+        left: 0%;
+        bottom: -200%;
+    }
+
     50% {
         transform: rotate(300deg);
         left: 0%;
         bottom: -200%;
     }
+
     100% {
         transform: rotate(360deg);
         left: 0%;
@@ -357,31 +391,33 @@ section {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
     animation-name: bolt-hero;
-    animation-duration: 25000ms;
+    animation-duration: 60000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 18000ms;
+    animation-delay: 36500ms;
     clip-path: polygon(61% 0, 100% 0, 80% 45%, 100% 45%, 40% 100%, 61% 46%, 41% 46%);
 }
 
 @keyframes bolt-hero {
     0% {
         right: -100%;
-        top: -30%;
+        top: -45%;
         transform: rotate(-85deg);
-
+    }
+    25% {
+        right: 120%;
+        top: 55%;
+        transform: rotate(-125deg);
     }
     50% {
-        right: 120%;
-        top: 40%;
-        transform: rotate(-115deg);
-
+        right: 150%;
+        top: 20%;
+        transform: rotate(-125deg);
     }
     100% {
         right: 150%;
         top: 20%;
-        transform: rotate(-115deg);
-
+        transform: rotate(-125deg);
     }
 }
 
@@ -392,41 +428,44 @@ section {
     transform: rotate(0deg);
     background-color: rgba(59, 30, 57, 0.5);
     position: absolute;
-    left: -100%;
-    top: -20%;
+    left: -25%;
+    bottom: -50%;
     overflow: hidden;
     transition: all ease-in-out 0ms;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
     animation-name: extra-hero;
-    animation-duration: 25000ms;
+    animation-duration: 60000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 15000ms;
+    animation-delay: 48500ms;
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
 
 @keyframes extra-hero {
     0% {
-        left: -100%;
-        top: -20%;
+        left: -25%;
+        bottom: -50%;
         transform: rotate(0deg);
-
+    }
+    25% {
+        left: 120%;
+        bottom: 150%;
+        transform: rotate(360deg);
     }
     50% {
         left: 120%;
-        top: 85%;
+        bottom: 150%;
         transform: rotate(360deg);
-
     }
     100% {
         left: 150%;
-        top: 85%;
+        bottom: 150%;
         transform: rotate(360deg);
-
     }
 }
 
+/* ----- MEDIA FOR COVER SHAPE ----------------------- */
 
 @media (max-width: 800px) {
 
@@ -602,7 +641,7 @@ section {
 
 
 }
-
+*/
 /* -------------------------------- BREAKERS ---------------------------------------- */
 
 .breaker {
