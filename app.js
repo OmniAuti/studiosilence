@@ -90,3 +90,52 @@ galClick.forEach(gal => {
 closeBtn.addEventListener('click', () => {
     galModalCont.classList.remove('active-modal')
 })
+
+
+const circleHero = document.querySelector('.circle-hero')
+const rectangleHero = document.querySelector('.rectangle-hero')
+const diamondHero = document.querySelector('.diamond-hero')
+const triangleHero = document.querySelector('.triangle-hero')
+const rectangleTwoHero = document.querySelector('.rectangle-two-hero')
+const boltHero = document.querySelector('.bolt-hero')
+const extraHero = document.querySelector('.extra-hero')
+
+setInterval(() => {
+   //  console.log(circleHero.getBoundingClientRect().top, 'circle')
+   // console.log(diamondHero.getBoundingClientRect().top, 'diamond')
+     console.log(rectangleHero.getBoundingClientRect().left, 'rect')
+   //   console.log(triangleHero.getBoundingClientRect().top, 'tri')
+
+
+    if (circleHero.getBoundingClientRect().top < -250) {
+          diamondHero.style.animationName = 'diamond-hero'
+          console.log('dia')
+          setTimeout(() => {
+            circleHero.style.animationName = 'circle'
+          }, 1000)
+        }
+
+    if (diamondHero.getBoundingClientRect().top > 350) {
+        console.log('rect')
+          rectangleHero.style.animationName = 'rectangle-hero'
+          setTimeout(() => {
+            diamondHero.style.animationName = 'diamond'
+          }, 1000)
+        }
+  
+    if (rectangleHero.getBoundingClientRect().left > 1000) {
+          triangleHero.style.animationName = 'triangle-hero'
+          console.log('ok')
+          setTimeout(() => {
+            rectangleHero.style.animationName = 'rectangle'
+          }, 2000)
+            }
+  
+            if (triangleHero.getBoundingClientRect().top > 200 ) {
+            circleHero.style.animationName = 'circle-hero'
+            console.log('tri')
+            setTimeout(() => {
+                triangleHero.style.animationName = 'triangle'
+            }, 1000)
+                }
+},1000)
