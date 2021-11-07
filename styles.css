@@ -166,8 +166,8 @@ section {
 @keyframes circle-hero {
 
     to {
-        top: -150%;
-        right: 110%;
+        top: -200%;
+        right: 150%;
     }
 }
 
@@ -196,7 +196,7 @@ section {
     to {
         transform: rotate(-45deg);
         right: 50%;
-        top: 150%; 
+        top: 200%; 
     }
 }
 
@@ -233,7 +233,7 @@ section {
     background-color: rgba(248, 0, 248, 0.5);
     position: absolute;
     left: 12.5%;
-    bottom: 120%;
+    bottom: 150%;
     overflow: hidden;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
@@ -248,46 +248,34 @@ section {
     to {
         transform: rotate(360deg);
         left: 0%;
-        bottom: -150%;
+        bottom: -200%;
     }
 }
-/*
+
 .rectangle-two-hero {
     width: 250px;
     height: 500px;
     background-color: rgba(82, 206, 24, 0.5);
     position: absolute;
-    transition: all ease-in-out 1000ms;
-    bottom: -150%;
+    bottom: -500px;
     left: 41%;
     background-image: var(--background-glass);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
-    animation-name: rectangle-two-hero;
-    animation-duration: 60000ms;
+    animation-name: rectangle-two;
+    animation-duration: 20000ms;
     animation-timing-function: linear;
     animation-iteration-count: 1;
 }
 
 @keyframes rectangle-two-hero {
-    0% {
-        bottom: -125%;
-    }
-
-    25% {
-        bottom: 125%
-    }
-
-    50% {
-        bottom: 125%
-    }
 
     100%{
-        bottom: 125%;
+        bottom: 200%;
     }
 }
 
-
+/*
 .bolt-hero {
     background-image: var(--background-glass);
     width: 450px;
