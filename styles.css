@@ -70,7 +70,9 @@ section {
 }
 
 @media (max-width: 800px) {
-
+.silence-title {
+    margin-bottom: 100px;
+}
 }
 
 .cover-shape-one {
