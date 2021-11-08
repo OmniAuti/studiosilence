@@ -99,16 +99,24 @@ const triangleHero = document.querySelector('.triangle-hero')
 const rectangleTwoHero = document.querySelector('.rectangle-two-hero')
 const boltHero = document.querySelector('.bolt-hero')
 const extraHero = document.querySelector('.extra-hero')
+//USE THESE TO DETERMINE BEST PRACTICE WITH RESIZING -- NEED TO ADD AN EVENT LISTENR FOR RESIZE
+//console.log(window.innerWidth, 'width', window.innerHeight, 'height')
+
+const windowWidth = window.innerWidth;
+const windowHeight = window.innerHeight;
 
 setInterval(() => {
-   //  console.log(circleHero.getBoundingClientRect().top, 'circle')
+    // console.log(circleHero.getBoundingClientRect().top, 'circle')
    // console.log(diamondHero.getBoundingClientRect().top, 'diamond')
-     //console.log(rectangleHero.getBoundingClientRect().left, 'rect')
-     console.log(rectangleTwoHero.getBoundingClientRect().bottom, 'rectTwo')
-     console.log(triangleHero.getBoundingClientRect().top, 'tri')
+    // console.log(rectangleHero.getBoundingClientRect().left, 'rect')
+     console.log(windowWidth)
+     console.log(windowHeight)
+     // console.log(rectangleTwoHero.getBoundingClientRect().bottom, 'rectTwo')
+     //console.log(triangleHero.getBoundingClientRect().top, 'tri')
+    //console.log(boltHero.getBoundingClientRect().left, 'bolt')
 
 
-    if (circleHero.getBoundingClientRect().top < -250) {
+    if (circleHero.getBoundingClientRect().bottom < 150) {
           diamondHero.style.animationName = 'diamond-hero'
           console.log('dia')
           setTimeout(() => {
@@ -116,36 +124,52 @@ setInterval(() => {
           }, 2000)
     }
 
-    if (diamondHero.getBoundingClientRect().top > 350) {
+    if (diamondHero.getBoundingClientRect().top > windowHeight) {
         console.log('rect')
           rectangleHero.style.animationName = 'rectangle-hero'
           setTimeout(() => {
             diamondHero.style.animationName = 'diamond'
-          }, 2000)
+          }, 1000)
     }
-  
-    if (rectangleHero.getBoundingClientRect().left > 1000) {
+
+    if (rectangleHero.getBoundingClientRect().left > windowWidth ) {
           triangleHero.style.animationName = 'triangle-hero'
           console.log('ok')
           setTimeout(() => {
             rectangleHero.style.animationName = 'rectangle'
-          }, 2000)
+          }, 1000)
     }
   
-    if (triangleHero.getBoundingClientRect().top > 200 ) {
+    if (triangleHero.getBoundingClientRect().top > windowHeight ) {
             rectangleTwoHero.style.animationName = 'rectangle-two-hero'
             console.log('tri')
             setTimeout(() => {
                 triangleHero.style.animationName = 'triangle'
-            }, 2000)
+            }, 1000)
     }
 
-    if (rectangleTwoHero.getBoundingClientRect().bottom < 150 ) {
-            circleHero.style.animationName = 'circle-hero'
+    if (rectangleTwoHero.getBoundingClientRect().bottom < 0 ) {
+            boltHero.style.animationName = 'bolt-hero'
             console.log('rectTwo')
             setTimeout(() => {
                 rectangleTwoHero.style.animationName = 'rectangle-two'
             }, 2000)
+    }
+
+    if (boltHero.getBoundingClientRect().left < -400) {
+        extraHero.style.animationName = 'extra-hero'
+        console.log('bolty')
+        setTimeout(() => {
+            boltHero.style.animationName = 'bolt'
+        }, 2000)
+    }
+
+    if (extraHero.getBoundingClientRect().left > windowWidth) {
+        circleHero.style.animationName = 'circle-hero'
+        console.log('add')
+        setTimeout(() => {
+            extraHero.style.animationName = 'extra'
+        }, 2000)
     }
 
 },1000)

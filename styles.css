@@ -196,13 +196,13 @@ section {
     to {
         transform: rotate(-45deg);
         right: 50%;
-        top: 200%; 
+        top: 150%; 
     }
 }
 
 
 .rectangle-hero {
-    width: 750px;
+    width: 500px;
     height: 250px;
     background-color: rgba(236, 208, 47, 0.5);
     position: absolute;
@@ -213,7 +213,7 @@ section {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
     animation-name: rectangle;
-    animation-duration: 20000ms;
+    animation-duration: 15000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -238,18 +238,20 @@ section {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
     animation-name: triangle;
-    animation-duration: 10000ms;
+    animation-duration: 15000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 @keyframes triangle-hero {
+
     to {
         transform: rotate(360deg);
         left: 0%;
-        bottom: -200%;
+        bottom: -300%;
     }
+
 }
 
 .rectangle-two-hero {
@@ -273,9 +275,10 @@ section {
     100%{
         bottom: 200%;
     }
+
 }
 
-/*
+
 .bolt-hero {
     background-image: var(--background-glass);
     width: 450px;
@@ -283,41 +286,26 @@ section {
     transform: rotate(-85deg);
     background-color: rgba(81, 188, 250, 0.5);
     position: absolute;
-    right: -125%;
+    right: -100%;
     top: -30%;
     overflow: hidden;
-    transition: all ease-in-out 0ms;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
-    animation-name: bolt-hero;
-    animation-duration: 60000ms;
+    animation-name: bolt;
+    animation-duration: 15000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 36500ms;
     clip-path: polygon(61% 0, 100% 0, 80% 45%, 100% 45%, 40% 100%, 61% 46%, 41% 46%);
 }
 
 @keyframes bolt-hero {
-    0% {
-        right: -100%;
-        top: -45%;
-        transform: rotate(-85deg);
-    }
-    25% {
-        right: 120%;
-        top: 55%;
-        transform: rotate(-125deg);
-    }
-    50% {
-        right: 150%;
-        top: 20%;
-        transform: rotate(-125deg);
-    }
+
     100% {
         right: 150%;
-        top: 20%;
-        transform: rotate(-125deg);
+        top: 40%;
+        transform: rotate(45deg);
     }
+
 }
 
 .extra-hero {
@@ -330,34 +318,17 @@ section {
     left: -25%;
     bottom: -50%;
     overflow: hidden;
-    transition: all ease-in-out 0ms;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur( 5px );
-    animation-name: extra-hero;
-    animation-duration: 60000ms;
+    animation-name: extra;
+    animation-duration: 20000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 48500ms;
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
 
 @keyframes extra-hero {
-    0% {
-        left: -25%;
-        bottom: -50%;
-        transform: rotate(0deg);
-    }
-    25% {
-        left: 120%;
-        bottom: 150%;
-        transform: rotate(360deg);
-    }
-    50% {
-        left: 120%;
-        bottom: 150%;
-        transform: rotate(360deg);
-    }
-    100% {
+    to {
         left: 150%;
         bottom: 150%;
         transform: rotate(360deg);
