@@ -161,6 +161,7 @@ section {
   animation-duration: 20000ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  display: block;
 }
 
 @keyframes circle-hero {
@@ -187,6 +188,7 @@ section {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   transform: rotate(45deg);
+  display: none;
 }
 
 @keyframes diamond-hero {
@@ -212,6 +214,7 @@ section {
   animation-duration: 15000ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  display: none;
 }
 
 @keyframes rectangle-hero {
@@ -237,6 +240,7 @@ section {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  display: none;
 }
 
 @keyframes triangle-hero {
@@ -261,6 +265,7 @@ section {
   animation-duration: 20000ms;
   animation-timing-function: linear;
   animation-iteration-count: 1;
+  display: none;
 }
 
 @keyframes rectangle-two-hero {
@@ -285,6 +290,7 @@ section {
   animation-duration: 15000ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  display: none;
   clip-path: polygon(
     61% 0,
     100% 0,
@@ -320,6 +326,7 @@ section {
   animation-duration: 20000ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  display: none;
   clip-path: polygon(
     20% 0%,
     0% 20%,

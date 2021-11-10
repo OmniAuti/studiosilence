@@ -92,16 +92,17 @@ const boltHero = document.querySelector(".bolt-hero");
 const extraHero = document.querySelector(".extra-hero");
 //USE THESE TO DETERMINE BEST PRACTICE WITH RESIZING -- NEED TO ADD AN EVENT LISTENR FOR RESIZE
 //console.log(window.innerWidth, 'width', window.innerHeight, 'height')
-const windowWidth = hero.offsetWidth;
-const windowHeight = hero.offsetHeight;
-
-const windowTop = hero.offsetTop;
-const windowLeft = hero.offsetLeft;
-
-const windowRight = windowWidth + windowLeft
-const windowBottom = windowHeight + windowTop
 
 setInterval(() => {
+
+    const windowWidth = hero.offsetWidth;
+    const windowHeight = hero.offsetHeight;
+
+    const windowTop = hero.offsetTop;
+    const windowLeft = hero.offsetLeft;
+
+    const windowRight = windowWidth + windowLeft
+    const windowBottom = windowHeight + windowTop
    //console.log(windowRight, 'right')
   // console.log(extraHero.offsetLeft, 'squre')
    //console.log(circleHero.getBoundingClientRect().top, 'circle')
@@ -113,51 +114,65 @@ setInterval(() => {
   //console.log(boltHero.getBoundingClientRect().left, 'bolt')
 
   if (circleHero.offsetTop < -150) {
+    diamondHero.style.display = 'block'
     diamondHero.style.animationName = "diamond-hero";
     setTimeout(() => {
       circleHero.style.animationName = "circle";
+      circleHero.style.display = 'none'
     }, 5000);
   }
 
   if (diamondHero.offsetTop > windowBottom) {
+    rectangleHero.style.display = 'block'
     rectangleHero.style.animationName = "rectangle-hero";
     setTimeout(() => {
       diamondHero.style.animationName = "diamond";
+      diamondHero.style.display = 'none'
     }, 2000);
   }
 
   if (rectangleHero.offsetLeft > windowRight) {
+    triangleHero.style.display = 'block'
     triangleHero.style.animationName = "triangle-hero";
     setTimeout(() => {
       rectangleHero.style.animationName = "rectangle";
+      rectangleHero.style.display = 'none'
     }, 1000);
   }
 
   if (triangleHero.offsetTop > windowBottom) {
+    rectangleTwoHero.style.display = 'block'
     rectangleTwoHero.style.animationName = "rectangle-two-hero";
     setTimeout(() => {
       triangleHero.style.animationName = "triangle";
+      triangleHero.style.display = 'none'
     }, 2000);
   }
 
   if (rectangleTwoHero.offsetTop < -400) {
+    boltHero.style.display = 'block'
     boltHero.style.animationName = "bolt-hero";
     setTimeout(() => {
       rectangleTwoHero.style.animationName = "rectangle-two";
+      rectangleTwoHero.style.display = 'none'
     }, 2000);
   }
 
   if (boltHero.offsetLeft < 0) {
+    extraHero.style.display = 'block'
     extraHero.style.animationName = "extra-hero";
     setTimeout(() => {
       boltHero.style.animationName = "bolt";
+      boltHero.style.display = 'none'
     }, 5000);
   }
 
-  if (extraHero.offsetLeft > windowWidth) {
+  if (extraHero.offsetLeft > windowRight) {
+    circleHero.style.display = 'block'
     circleHero.style.animationName = "circle-hero";
     setTimeout(() => {
       extraHero.style.animationName = "extra";
+      extraHero.style.display = 'none'
     }, 3000);
   }
   
