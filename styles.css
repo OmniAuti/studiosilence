@@ -175,11 +175,11 @@ section {
   background-image: var(--background-glass);
   width: 400px;
   height: 450px;
-  transform: rotate(45deg);
+  transform: rotate(0deg);
   background-color: rgba(202, 13, 0, 0.5);
   position: absolute;
   right: 5%;
-  top: -150%;
+  top: -450px;
   overflow: hidden;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -187,13 +187,12 @@ section {
   animation-duration: 15000ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  transform: rotate(45deg);
   display: none;
 }
 
 @keyframes diamond-hero {
   to {
-    transform: rotate(-45deg);
+    transform: rotate(-90deg);
     right: 50%;
     top: 150%;
   }
@@ -206,7 +205,7 @@ section {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
-  left: -750px;
+  left: -500px;
   background-image: var(--background-glass);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -281,7 +280,7 @@ section {
   transform: rotate(-85deg);
   background-color: rgba(81, 188, 250, 0.5);
   position: absolute;
-  right: -100%;
+  right: -450px;
   top: -30%;
   overflow: hidden;
   backdrop-filter: blur(5px);
@@ -304,7 +303,7 @@ section {
 
 @keyframes bolt-hero {
   to {
-    right: 150%;
+    right: 200%;
     top: 40%;
     transform: rotate(45deg);
   }
