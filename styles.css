@@ -1,899 +1,898 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --font-through: #eeebe6;
-    --background-glass: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  --font-through: #eeebe6;
+  --background-glass: url("https://www.transparenttextures.com/patterns/otis-redding.png");
 
-    /*url("https://www.transparenttextures.com/patterns/otis-redding.png");*/
+  /*url("https://www.transparenttextures.com/patterns/otis-redding.png");*/
 }
 
 html {
-    scroll-behavior: smooth;
-    -webkit-scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
 
 body {
-    position: relative;
-    background-color: var(--font-through);
-    overflow-y: hidden;
+  position: relative;
+  background-color: var(--font-through);
+  overflow-y: hidden;
 }
 
 main {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
 }
 
 @media (max-width: 800px) {
+  body {
+    overflow-y: scroll;
+  }
 
-    body {
-        overflow-y: scroll;
-    }
-
-    main {
-        overflow-y: scroll;
-        flex-direction: column;
-    }
+  main {
+    overflow-y: scroll;
+    flex-direction: column;
+  }
 }
 
 section {
-    min-width: 100vw;
-    height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
 }
-  
+
 /* ------------------- HERO ---------------------- */
 
 .hero {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .studio-title {
-    float: left;
-    margin-left: 5%;
-    width: 60vw;
+  float: left;
+  margin-left: 5%;
+  width: 60vw;
 }
 
 .silence-title {
-    float:right;
-    margin-right: 5%;
-    width: 70.11vw;
+  float: right;
+  margin-right: 5%;
+  width: 70.11vw;
 }
 
 @media (max-width: 800px) {
-.silence-title {
+  .silence-title {
     margin-bottom: 100px;
-}
+  }
 }
 
 .cover-shape-one {
-    background-image: var(--background-glass);
-    width: 28vw;
-    height: 100%;
-    background-color: rgba(202, 13, 0, 0.5);
-    position: absolute;
-    right: 100%;
-    overflow: hidden;
-    transition: all ease-in-out 0ms;
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 5px );
-    z-index: 5;
+  background-image: var(--background-glass);
+  width: 28vw;
+  height: 100%;
+  background-color: rgba(202, 13, 0, 0.5);
+  position: absolute;
+  right: 100%;
+  overflow: hidden;
+  transition: all ease-in-out 0ms;
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 5;
 }
 .cover-shape-two {
-    background-image: var(--background-glass);
-    width: 28vw;
-    height: 100%;
-    background-color: rgba(140, 177, 116, 0.5);
-    position: absolute;
-    right: 124.5%;
-    overflow: hidden;
-    transition: all ease-in-out 0ms;
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 5px );
-    z-index: 5;
+  background-image: var(--background-glass);
+  width: 28vw;
+  height: 100%;
+  background-color: rgba(140, 177, 116, 0.5);
+  position: absolute;
+  right: 124.5%;
+  overflow: hidden;
+  transition: all ease-in-out 0ms;
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 5;
 }
 
 .cover-shape-three {
-    background-image: var(--background-glass);
-    width: 28vw;
-    height: 100%;
-    background-color: rgba(94, 68, 206, 0.5);
-    position: absolute;
-    right: 147%;
-    overflow: hidden;
-    transition: all ease-in-out 0ms;
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 5px );
-    z-index: 5;
+  background-image: var(--background-glass);
+  width: 28vw;
+  height: 100%;
+  background-color: rgba(94, 68, 206, 0.5);
+  position: absolute;
+  right: 147%;
+  overflow: hidden;
+  transition: all ease-in-out 0ms;
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 5;
 }
 
 .cover-shape-four {
-    background-image: var(--background-glass);
-    width: 28vw;
-    height: 100%;
-    background-color: rgba(215, 88, 226, 0.5);
-    position: absolute;
-    right: 169.5%;
-    overflow: hidden;
-    transition: all ease-in-out 0ms;
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 5px );
-    z-index: 5;
+  background-image: var(--background-glass);
+  width: 28vw;
+  height: 100%;
+  background-color: rgba(215, 88, 226, 0.5);
+  position: absolute;
+  right: 169.5%;
+  overflow: hidden;
+  transition: all ease-in-out 0ms;
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 5;
 }
 
 .cover-shape-five {
-    background-image: var(--background-glass);
-    width: 28vw;
-    height: 100%;
-    background-color: rgba(229, 231, 114, 0.5);
-    position: absolute;
-    right: 192%;
-    overflow: hidden;
-    transition: all ease-in-out 0ms;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 5px );
-    z-index: 5;
+  background-image: var(--background-glass);
+  width: 28vw;
+  height: 100%;
+  background-color: rgba(229, 231, 114, 0.5);
+  position: absolute;
+  right: 192%;
+  overflow: hidden;
+  transition: all ease-in-out 0ms;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 5;
 }
-
 
 /* ------------------------------------------- HERO SHAPE EFFECT ---------------------------------------------------- */
 
 .circle-hero {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: rgba(44, 55, 156, 0.5);
-    position: absolute;
-    top: 100%;
-    right: 0%;
-    overflow: hidden;
-    background-image: var(--background-glass);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 5px );
-    animation-name: circle-hero;
-    animation-duration: 20000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgba(44, 55, 156, 0.5);
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  overflow: hidden;
+  background-image: var(--background-glass);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation-name: circle-hero;
+  animation-duration: 20000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes circle-hero {
-
-    to {
-        top: -200%;
-        right: 150%;
-    }
+  to {
+    top: -200%;
+    right: 150%;
+  }
 }
 
 .diamond-hero {
-    background-image: var(--background-glass);
-    width: 400px;
-    height: 450px;
-    transform: rotate(45deg);
-    background-color: rgba(202, 13, 0, 0.5);
-    position: absolute;
-    right: 5%;
-    top: -150%;
-    overflow: hidden;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 5px );
-    animation-name: diamond;
-    animation-duration: 15000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    transform: rotate(45deg);
-
+  background-image: var(--background-glass);
+  width: 400px;
+  height: 450px;
+  transform: rotate(45deg);
+  background-color: rgba(202, 13, 0, 0.5);
+  position: absolute;
+  right: 5%;
+  top: -150%;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation-name: diamond;
+  animation-duration: 15000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform: rotate(45deg);
 }
 
 @keyframes diamond-hero {
-
-    to {
-        transform: rotate(-45deg);
-        right: 50%;
-        top: 150%; 
-    }
+  to {
+    transform: rotate(-45deg);
+    right: 50%;
+    top: 150%;
+  }
 }
 
-
 .rectangle-hero {
-    width: 500px;
-    height: 250px;
-    background-color: rgba(236, 208, 47, 0.5);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: -750px;
-    background-image: var(--background-glass);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 5px );
-    animation-name: rectangle;
-    animation-duration: 15000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  width: 500px;
+  height: 250px;
+  background-color: rgba(236, 208, 47, 0.5);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: -750px;
+  background-image: var(--background-glass);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation-name: rectangle;
+  animation-duration: 15000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes rectangle-hero {
-
-     to {
-        left: 200%;
-    }
+  to {
+    left: 200%;
+  }
 }
 
 .triangle-hero {
-    background-image: var(--background-glass);
-    width: 450px;
-    height: 450px;
-    transform: rotate(25deg);
-    background-color: rgba(248, 0, 248, 0.5);
-    position: absolute;
-    left: 12.5%;
-    bottom: 150%;
-    overflow: hidden;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 5px );
-    animation-name: triangle;
-    animation-duration: 15000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-image: var(--background-glass);
+  width: 450px;
+  height: 450px;
+  transform: rotate(25deg);
+  background-color: rgba(248, 0, 248, 0.5);
+  position: absolute;
+  left: 12.5%;
+  bottom: 150%;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation-name: triangle;
+  animation-duration: 15000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 @keyframes triangle-hero {
-
-    to {
-        transform: rotate(360deg);
-        left: 0%;
-        bottom: -300%;
-    }
-
+  to {
+    transform: rotate(360deg);
+    left: 0%;
+    bottom: -300%;
+  }
 }
 
 .rectangle-two-hero {
-    width: 250px;
-    height: 500px;
-    background-color: rgba(82, 206, 24, 0.5);
-    position: absolute;
-    bottom: -500px;
-    left: 41%;
-    background-image: var(--background-glass);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 5px );
-    animation-name: rectangle-two;
-    animation-duration: 20000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
+  width: 250px;
+  height: 500px;
+  background-color: rgba(82, 206, 24, 0.5);
+  position: absolute;
+  bottom: -500px;
+  left: 41%;
+  background-image: var(--background-glass);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation-name: rectangle-two;
+  animation-duration: 20000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 
 @keyframes rectangle-two-hero {
-
-    100%{
-        bottom: 200%;
-    }
-
+  100% {
+    bottom: 200%;
+  }
 }
 
-
 .bolt-hero {
-    background-image: var(--background-glass);
-    width: 450px;
-    height: 450px;
-    transform: rotate(-85deg);
-    background-color: rgba(81, 188, 250, 0.5);
-    position: absolute;
-    right: -100%;
-    top: -30%;
-    overflow: hidden;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 5px );
-    animation-name: bolt;
-    animation-duration: 15000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    clip-path: polygon(61% 0, 100% 0, 80% 45%, 100% 45%, 40% 100%, 61% 46%, 41% 46%);
+  background-image: var(--background-glass);
+  width: 450px;
+  height: 450px;
+  transform: rotate(-85deg);
+  background-color: rgba(81, 188, 250, 0.5);
+  position: absolute;
+  right: -100%;
+  top: -30%;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation-name: bolt;
+  animation-duration: 15000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  clip-path: polygon(
+    61% 0,
+    100% 0,
+    80% 45%,
+    100% 45%,
+    40% 100%,
+    61% 46%,
+    41% 46%
+  );
 }
 
 @keyframes bolt-hero {
-
-    100% {
-        right: 150%;
-        top: 40%;
-        transform: rotate(45deg);
-    }
-
+  to {
+    right: 150%;
+    top: 40%;
+    transform: rotate(45deg);
+  }
 }
 
 .extra-hero {
-    background-image: var(--background-glass);
-    width: 300px;
-    height: 300px;
-    transform: rotate(0deg);
-    background-color: rgba(59, 30, 57, 0.5);
-    position: absolute;
-    left: -25%;
-    bottom: -50%;
-    overflow: hidden;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur( 5px );
-    animation-name: extra;
-    animation-duration: 20000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  background-image: var(--background-glass);
+  width: 300px;
+  height: 300px;
+  transform: rotate(0deg);
+  background-color: rgba(59, 30, 57, 0.5);
+  position: absolute;
+  left: -25%;
+  bottom: -50%;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation-name: extra;
+  animation-duration: 20000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
 }
 
 @keyframes extra-hero {
-    to {
-        left: 150%;
-        bottom: 150%;
-        transform: rotate(360deg);
-    }
+  to {
+    left: 150%;
+    bottom: 150%;
+    transform: rotate(360deg);
+  }
 }
 
 /* ----- MEDIA FOR COVER SHAPE ----------------------- */
 
-
 /* -------------------------------- BREAKERS ---------------------------------------- */
 
 .breaker {
-    position: sticky;
-    height: 100%;
-    width: 150px;
-    border-right: 1px solid #000;
-    border-left: 1px solid #000;
-    background-color: var(--font-through);
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 6;
+  position: sticky;
+  height: 100%;
+  width: 150px;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  background-color: var(--font-through);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 6;
 }
 
 .breaker img {
-    height: 50px;
-    width:unset;
+  height: 50px;
+  width: unset;
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
+  .breaker {
+    top: 0;
+    width: 100%;
+    height: 75px;
+    flex-direction: row;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    border-left: none;
+    border-right: none;
+  }
 
-    .breaker {
-        top: 0;
-        width: 100%;
-        height: 75px;
-        flex-direction: row;
-        border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
-        border-left: none;
-        border-right: none;
-    }
-
-    .breaker img {
-        height: 25px;
-    }
+  .breaker img {
+    height: 25px;
+  }
 }
 
 /* -------------------------------- gallery ---------------------------------------- */
 
 .gallery {
-    background-color: var(--font-through);
-    z-index: 6;
-    position: relative;
+  background-color: var(--font-through);
+  z-index: 6;
+  position: relative;
 }
 
 .gallery-container {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: calc(100% - 150px);
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 150px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .gallery-modal-cont {
-    position: absolute;
-    width: calc(100% - 150px);
-    height: 100%;
-    top: 0;
-    right:0;
-    z-index: 5;
-    background-color: rgba(0,0,0,0.5);
-    right: 0;
-    display: none;
+  position: absolute;
+  width: calc(100% - 150px);
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 0;
+  display: none;
 }
 
 .gallery-modal img {
-    margin-bottom: -5px;
+  margin-bottom: -5px;
 }
 
 .close-btn {
-    height: 25px;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 .close-btn:active {
-    transform: scale(.98)
+  transform: scale(0.98);
 }
 
 .gallery-modal {
-    min-width: 50%;
-    max-height:90%;
-    overflow: hidden;
-    border-radius: 5px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid var(--font-through);
-    box-shadow: 0px 0px 10px #000,0px 0px 10px #000;
+  min-width: 50%;
+  max-height: 90%;
+  overflow: hidden;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid var(--font-through);
+  box-shadow: 0px 0px 10px #000, 0px 0px 10px #000;
 }
 
 .gallery-modal img {
-    object-fit: cover;
-    width: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .gallery-modal-cont.active-modal {
-    display: block;
+  display: block;
 }
 
-.gallery-row, 
-    .gallery-row-bottom {
-    height: 49.5%;
-    width: 97.5%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.gallery-row,
+.gallery-row-bottom {
+  height: 49.5%;
+  width: 97.5%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .contain-top {
-    width: 24.75%;
-    height: 100%;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
+  width: 24.75%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
 }
 .contain-top img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: transform ease-in 250ms;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform ease-in 250ms;
 }
 
 .contain {
-    width: 33%;
-    height: 100%;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
+  width: 33%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .contain img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: transform ease-in 250ms;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform ease-in 250ms;
 }
 
 .contain img:hover,
-    .contain-top img:hover {
-    transform: scale(1.02);
+.contain-top img:hover {
+  transform: scale(1.02);
 }
 
 @media (max-width: 800px) {
+  .gallery {
+    height: 400vh;
+  }
 
-    .gallery {
-        height: 400vh;
-    }
+  .gallery-container {
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 75px;
+  }
 
-    .gallery-container {
-        right: 0;
-        top: 0;
-        width: 100%;
-        padding-top: 75px;
-    }
+  .gallery-modal-cont {
+    width: 100%;
+  }
 
-    .gallery-modal-cont {
-        width: 100%;
-    }
+  .gallery-modal {
+    min-width: 90%;
+    max-height: 90%;
+  }
 
-    .gallery-modal {
-        min-width: 90%;
-        max-height:90%;
+  .gallery-row {
+    height: 49.5%;
+    width: 99%;
+    overflow: visible;
+    flex-wrap: wrap;
+  }
 
-    }
+  .gallery-row-bottom {
+    height: 49.5%;
+    width: 99%;
+    overflow: visible;
+    flex-wrap: wrap;
+  }
 
-    .gallery-row {
-        height: 49.5%;
-        width: 99%;
-        overflow:visible;
-        flex-wrap: wrap;
-    }
+  .contain-top {
+    margin-top: 2.5px;
+    width: 100%;
+    height: 25%;
+  }
 
-    .gallery-row-bottom {
-        height: 49.5%;
-        width: 99%;
-        overflow:visible;
-        flex-wrap: wrap;
-    }
-
-    .contain-top {
-        margin-top: 2.5px;
-        width: 100%;
-        height: 25%;
-    }
-
-    .contain {
-        width: 100%;
-        height: 33%;
-        margin-top: 2.5px;
-    }
-
+  .contain {
+    width: 100%;
+    height: 33%;
+    margin-top: 2.5px;
+  }
 }
 
 /* --------------------------------- Store -------------------------------------------- */
 
 .store {
-    position: relative;
+  position: relative;
 }
 
 .title-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .title-container img {
-    margin-top: 15px;
-    height: 30px;
+  margin-top: 15px;
+  height: 30px;
 }
 
 .etsy-container {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: 150px;
-    display: flex;
-    flex-direction: column;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 .etsy-store-rev-cont {
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
 }
 .etsy-store-rev {
-    height: 100px;
-    margin-top: 0;
-    width: 35%;
+  height: 100px;
+  margin-top: 0;
+  width: 35%;
 }
 
 .etsy-items-cont {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    cursor: pointer;
-    padding-top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  cursor: pointer;
+  padding-top: 0;
 }
 
 .etsy-item {
-    height: 35%;
-    width: 35%;
-    border-radius: 5px;
-    margin-top: 10px;
-    overflow: hidden;
+  height: 35%;
+  width: 35%;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
 }
 
 .etsy-item a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .etsy-item:hover {
-    box-shadow: 0px 0px 10px #000;
+  box-shadow: 0px 0px 10px #000;
 }
 
 .etsy-item-pic {
-    height: 78%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+  height: 78%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .etsy-item-name {
-    font-size: 1.25vw;
-    padding-left: 10px;
+  font-size: 1.25vw;
+  padding-left: 10px;
 }
 
 .etsy-price {
-    font-size: 1.25vw;
-    padding-left: 10px;
-    font-weight: bold;
+  font-size: 1.25vw;
+  padding-left: 10px;
+  font-weight: bold;
 }
 
 .commission-container {
-    position: absolute;
-    width: calc(50% - 150px);
-    height: 100%;
-    top: 0;
-    right: 0;
+  position: absolute;
+  width: calc(50% - 150px);
+  height: 100%;
+  top: 0;
+  right: 0;
 }
 
 .border-left-div {
-    position: absolute;
-    border-left: 1px solid #000;
-    height: 85%;
-    width: 100%;
+  position: absolute;
+  border-left: 1px solid #000;
+  height: 85%;
+  width: 100%;
 }
 
 .commission-container form {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 10% 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10% 0;
 }
 
 input {
-    cursor: pointer;
-    padding: 5px;
-    font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
 }
 
-input[type=file] {
-    width: 60%;
-    padding: 15px;
-    text-align: center;
-    margin: 0 auto;
+input[type="file"] {
+  width: 60%;
+  padding: 15px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 label {
-    font-size: 20px;
-    width: 100%;
-    padding: 5px;
+  font-size: 20px;
+  width: 100%;
+  padding: 5px;
 }
 
 .file-upload-container {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .file-upload-container div {
-    width: 272px;
-    margin-right: 0;
-    justify-content: space-between;
+  width: 272px;
+  margin-right: 0;
+  justify-content: space-between;
 }
 
 .file-upload-container svg {
-    margin-left: 5px;
-    
+  margin-left: 5px;
 }
 
 #textbox-description {
-    width: 80%;
-    font-size: 25px;
-    padding: 5px;
+  width: 80%;
+  font-size: 25px;
+  padding: 5px;
 }
 
 form div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form svg {
-    height: 30px;
-    margin-right: 20px;
+  height: 30px;
+  margin-right: 20px;
 }
 
 @media (max-width: 800px) {
-    .store {
-        display: flex;
-        height: 200vh;
-    }
+  .store {
+    display: flex;
+    height: 200vh;
+  }
 
-    .etsy-container {
-        width: 100%;
-        height: 50%;
-        top: 75px;
-        left: 0;
-    }
-    .commission-container {
-        width: 100%;
-        height: 50%;
-        bottom: 0;
-        top: 50%;
-    }
+  .etsy-container {
+    width: 100%;
+    height: 50%;
+    top: 75px;
+    left: 0;
+  }
+  .commission-container {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    top: 50%;
+  }
 
-    .border-left-div {
-       display: none;
-    }
+  .border-left-div {
+    display: none;
+  }
 
-    .etsy-item-name {
-        font-size: 12px;
-    }
-    
-    .etsy-price {
-        font-size: 16px;
-    }
+  .etsy-item-name {
+    font-size: 12px;
+  }
+
+  .etsy-price {
+    font-size: 16px;
+  }
 }
-
 
 /* ---------------------  Contact ------------------- */
 
 .contact {
-    min-width: 300px;
-    position: relative;
-    overflow:hidden;
+  min-width: 150px;
+  position: relative;
+  overflow: hidden;
 }
 
 .contact-breaker {
-    position: sticky;
-    left: 0;
+  position: sticky;
+  left: 0;
+  width: 100px;
 }
 
 .contact-container {
-    position: absolute;
-    right: 0;
-    top:0;
-    width: calc(100% - 150px);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contact-div {
-    z-index: 10;
-    width: 90%;
-    height: 30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  z-index: 10;
+  width: 75%;
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
 }
 
 .contact-div:hover {
-    transform: scale(1.02)
+  transform: scale(1.05);
 }
 .contact-div:nth-of-type(1) {
-    background-image: url(img/smartphone.svg);
+  background-image: url(img/smartphone.svg);
 }
 .contact-div:nth-of-type(2) {
-    background-image: url(img/arroba.svg);
+  background-image: url(img/arroba.svg);
 }
 .contact-div:nth-of-type(3) {
-    background-image: url(img/instagram.svg);
+  background-image: url(img/instagram.svg);
 }
 
 .contact-glass-cont {
-    animation-name: glass-contact;
-    animation-duration: 10000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    height: 100%;
-    position: absolute;
-    right: 140%;
-    top: 0;
-    width: 100%;    
+  animation-name: glass-contact;
+  animation-duration: 10000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  height: 100%;
+  position: absolute;
+  right: 140%;
+  top: 0;
+  width: 100%;
 }
 
 @keyframes glass-contact {
-    0% {
-        right: 140%;
-    }
-    100% {
-        right: -865%;
-    }
+  0% {
+    right: 140%;
+  }
+  100% {
+    right: -865%;
+  }
 }
 
 .contact-glass-one {
-    background-image: var(--background-glass);
-    width: 200%;
-    height: 500%;
-    background-color: rgba(202, 13, 0, 0.5);
-    position: absolute;
-    right: -25%;
-    top:0;
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 25px );
+  background-image: var(--background-glass);
+  width: 200%;
+  height: 500%;
+  background-color: rgba(202, 13, 0, 0.5);
+  position: absolute;
+  right: -25%;
+  top: 0;
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(25px);
 }
 .contact-glass-two {
-    background-image: var(--background-glass);
-    width: 200%;
-    height: 500%;
-    background-color: rgba(140, 177, 116, 0.5);
-    position: absolute;
-    right: 150%;
-    top:0;
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 25px );
+  background-image: var(--background-glass);
+  width: 200%;
+  height: 500%;
+  background-color: rgba(140, 177, 116, 0.5);
+  position: absolute;
+  right: 150%;
+  top: 0;
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(25px);
 }
 .contact-glass-three {
-    background-image: var(--background-glass);
-    width: 200%;
-    height: 100%;
-    background-color: rgba(94, 68, 206, 0.5);
-    position: absolute;
-    right: 315%;
-    top:0;
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 25px );
+  background-image: var(--background-glass);
+  width: 200%;
+  height: 100%;
+  background-color: rgba(94, 68, 206, 0.5);
+  position: absolute;
+  right: 315%;
+  top: 0;
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(25px);
 }
 .contact-glass-four {
-    background-image: var(--background-glass);
-    width: 200%;
-    height: 100%;
-    background-color: rgba(215, 88, 226, 0.5);
-    position: absolute;
-    right:490%;
-    top:0;
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 25px );
+  background-image: var(--background-glass);
+  width: 200%;
+  height: 100%;
+  background-color: rgba(215, 88, 226, 0.5);
+  position: absolute;
+  right: 490%;
+  top: 0;
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(25px);
 }
 .contact-glass-five {
-    background-image: var(--background-glass);
-    width: 200%;
-    height: 100%;
-    background-color: rgba(229, 231, 114, 0.5);
-    position: absolute;
-    right: 665%;
-    top:0;
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur( 25px );
+  background-image: var(--background-glass);
+  width: 200%;
+  height: 100%;
+  background-color: rgba(229, 231, 114, 0.5);
+  position: absolute;
+  right: 665%;
+  top: 0;
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(25px);
 }
 
 @media (max-width: 800px) {
-    .contact {
-        min-width: 100%;
-        height: 150px;
-        position: relative;
-        overflow:hidden;
-    }
-    
-    .contact-container {
-        position: absolute;
-        right: 0;
-        top:0;
-        width: 100%;
-        height: 100%;
-        padding-top: 75px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    
-    .contact-div {
-        width: 100%;
-        height: 75%;
-    }
+  .contact {
+    min-width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+  }
 
+  .contact-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
+  .contact-div {
+    width: 100%;
+    height: 75%;
+  }
 }
