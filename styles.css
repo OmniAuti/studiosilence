@@ -888,6 +888,10 @@ form svg {
     overflow: hidden;
   }
 
+  .contact-breaker {
+    width: 100%;
+  }
+
   .contact-container {
     position: absolute;
     right: 0;
