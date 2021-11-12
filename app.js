@@ -110,7 +110,7 @@ setInterval(() => {
   // console.log(extraHero.offsetLeft, 'squre')
    //console.log(circleHero.getBoundingClientRect().top, 'circle')
   // console.log(diamondHero.getBoundingClientRect().top, 'diamond')
-  // console.log(rectangleHero.getBoundingClientRect().left, 'rect')
+   //console.log(rectangleHero.offsetLeft, 'rect', windowWidth)
 
   // console.log(rectangleTwoHero.getBoundingClientRect().bottom, 'rectTwo')
   //console.log(triangleHero.getBoundingClientRect().top, 'tri')
@@ -134,7 +134,7 @@ setInterval(() => {
     }, 2000);
   }
 
-  if (rectangleHero.offsetLeft > windowRight) {
+  if (rectangleHero.offsetLeft > windowWidth + 225) {
     triangleHero.style.display = 'block'
     triangleHero.style.animationName = "triangle-hero";
     setTimeout(() => {
@@ -179,4 +179,4 @@ setInterval(() => {
     }, 3000);
   }
   
-}, 1000);
+}, 500);
