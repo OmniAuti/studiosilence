@@ -535,6 +535,7 @@ section {
     width: 99%;
     overflow: visible;
     flex-wrap: wrap;
+    margin-top: 10px;
   }
 
   .gallery-row-bottom {
@@ -543,6 +544,7 @@ section {
     overflow: visible;
     flex-wrap: wrap;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .contain-top {
