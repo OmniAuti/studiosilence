@@ -511,7 +511,7 @@ section {
 
 @media (max-width: 800px) {
   .gallery {
-    height: calc(150vh + 1250px);
+    height: calc(150vh + 1750px);
   }
 
   .gallery-container {
@@ -535,11 +535,10 @@ section {
     width: 99%;
     overflow: visible;
     flex-wrap: wrap;
-    margin-top: 10px;
   }
 
   .gallery-row-bottom {
-    height: 1000px;
+    height: 1050px;
     width: 99%;
     overflow: visible;
     flex-wrap: wrap;
@@ -549,13 +548,13 @@ section {
 
   .contain-top {
     margin-top: 2.5px;
-    width: 90%;
+    width: 99%;
     height: 25%;
   }
 
   .contain {
-    width: 90%;
-    height: 325px;
+    width: 99%;
+    height: 350px;
     margin-top: 2.5px;
   }
 }
