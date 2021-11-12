@@ -20,12 +20,44 @@ wrapper.addEventListener("scroll", () => {
 });
 
 if (window.innerWidth > 800) {
+
   const scrollContainer = document.querySelector("main");
 
   scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
   });
+
+const galClick = document.querySelectorAll(".gal-click");
+const galModal = document.querySelector(".gallery-modal");
+const galModalCont = document.querySelector(".gallery-modal-cont");
+const closeBtn = document.querySelector(".close-btn");
+
+
+  galClick.forEach((gal) => {
+    gal.addEventListener("click", () => {
+      let attrPic = gal.firstElementChild.getAttribute("src");
+  
+      if (!galModalCont.classList.contains("active-modal")) {
+        galModal.firstElementChild.setAttribute("src", attrPic);
+        galModalCont.classList.add("active-modal");
+  
+        const topOfModal = galModal.offsetTop * 1.25;
+  
+        window.scrollTo({
+          top: topOfModal,
+  
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+  
+  closeBtn.addEventListener("click", () => {
+    galModalCont.classList.remove("active-modal");
+  });
+
+
 }
 
 const contactDiv = document.querySelector(".contact-container");
@@ -52,35 +84,6 @@ function rainbowContact() {
 
   i++;
 }
-
-const galClick = document.querySelectorAll(".gal-click");
-const galModal = document.querySelector(".gallery-modal");
-const galModalCont = document.querySelector(".gallery-modal-cont");
-const closeBtn = document.querySelector(".close-btn");
-
-galClick.forEach((gal) => {
-  gal.addEventListener("click", () => {
-    let attrPic = gal.firstElementChild.getAttribute("src");
-
-    if (!galModalCont.classList.contains("active-modal")) {
-      galModal.firstElementChild.setAttribute("src", attrPic);
-      galModalCont.classList.add("active-modal");
-
-      const topOfModal = galModal.offsetTop * 1.25;
-
-      console.log(topOfModal);
-      window.scrollTo({
-        top: topOfModal,
-
-        behavior: "smooth",
-      });
-    }
-  });
-});
-
-closeBtn.addEventListener("click", () => {
-  galModalCont.classList.remove("active-modal");
-});
 
 
 const circleHero = document.querySelector(".circle-hero");
