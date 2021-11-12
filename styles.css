@@ -311,7 +311,7 @@ section {
 
 @keyframes bolt-hero {
   to {
-    right: 200%;
+    right: 250%;
     top: 40%;
     transform: rotate(45deg);
   }
